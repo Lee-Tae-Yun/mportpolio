@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lee Tae Youn mportpolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/uikit-core-rtl.min.css">
+<script src="js/uikit.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<div data-role="page"><!-- page -->
+	<div data-role="header">
+		<h2>Lee Tae Youn mportpolio</h2>
+		<a href="#leftpanel" class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">leftpanel</a>
+	</div><!--header -->
+
+	<div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+		<div class="ui-panel-inner">
+		<a data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"  style="margin-top:-10px; margin-left:-10px;margin-bottom:20px;"></a>
+		<ul data-role="listview" class="ui-listview">
+			<li class="ui-first-child">
+				<a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">홈</a>
+			</li>
+			<li>
+				<a href="myinfo.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">소개</a>
+			</li>
+			<li>
+				<a href="myst.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">학술</a>
+			</li>
+            <li class="ui-first-child">
+				<a href="mylan.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">언어</a>
+			</li>
+		</ul>
+		</div><!-- ui-panel-inner -->
+	</div><!-- end of menu-->
+
+	<div data-role="content">
+		<section class="section1">  
+			<div class="offcanvas offcanvas-end" id="demo">
+				<div class="offcanvas-header">
+				<h6 class="offcanvas-title">MBTI 성격 유형 테스트</h6>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="width:1px ;"></button>
+				</div>
+				<div class="offcanvas-body">
+				<p>회원가입을하고 성격유형 테스트를 할 수 있고,</p>
+				<p>회원끼리 성격 유형별로 소통 할 수 있다.</p>
+				</div>
+				<video autoplay controls preload="metadata">
+					<source src="/images/0and1.mp4" type="video/mp4"></source>
+				</video>
+			</div>
+			
+			<div class="container-fluid mt-3">
+				<h3>프로젝트</h3>
+				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"style="width: 10vw;">
+				프로젝트 펼치기
+				</button>
+			</div>
+			<div class="uk-inline">
+				<button class="uk-button uk-button-default" type="button">자격증</button>
+				<div uk-drop="mode: click">
+					<div class="uk-card uk-card-body uk-card-default">
+						<button class="uk-drop-close" type="button" aria-label="Close Drop" uk-close style="width:10px;"></button>
+						<ul class="uk-list uk-list-divider">
+							<li>정보처리기능사</li>
+							<li>GTQ 1급</li>
+							<li>ITQ 한글</li>
+							<li>ITQ 엑세스</li>
+							<li>ITQ 엑셀</li>
+						</ul>
+					</div>
+				</div>
+			</div>	  
+			
+			<h3>수상</h3>
+			<ul>
+				<li>교내 캡스톤 금상</li>
+				<img src="/images/capston.jpg">
+			</ul>
+			
+		</section> 
+		
+	</div>
+
+	<div data-role="footer">Lee Tae Yun M PortPolio</div>
+	
+</div><!-- end of page -->
+</body>
+
+</html>

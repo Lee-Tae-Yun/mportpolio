@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lee Tae Youn mportpolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./js/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+<div data-role="page"><!-- page -->
+	
+	<div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+		<div class="ui-panel-inner">
+		<a data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"  style="margin-top:-10px; margin-left:-10px;margin-bottom:20px;"></a>
+		<ul data-role="listview" class="ui-listview">
+			<li class="ui-first-child">
+				<a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">홈</a>
+			</li>
+			<li>
+				<a href="myinfo.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">소개</a>
+			</li>
+			<li>
+				<a href="myst.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">학술</a>
+			</li>
+            <li class="ui-first-child">
+				<a href="mylan.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">언어</a>
+			</li>
+		</ul>
+		</div><!-- ui-panel-inner -->
+	</div><!-- end of menu-->
+
+	<div data-role="header">
+		<h2>Lee Tae Youn mportpolio</h2>
+		<a href="#leftpanel" class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">leftpanel</a>
+	</div><!--header -->
+
+	<div data-role="content">
+		
+		<div id="container" style="height: 43vw; width: 100vw;"></div>
+	
+		<script type="text/javascript" src="js/echarts.min.js"></script>	  
+		<script type="text/javascript">
+		  var dom = document.getElementById('container');
+		  var myChart = echarts.init(dom, null, {
+			renderer: 'canvas',
+			useDirtyRect: false
+		  });
+		  var app = {};
+		  
+		  var option;
+	  
+		  option = {
+		title: {
+		  text: 'Use Language'
+		},
+		tooltip: {
+		  trigger: 'axis'
+		},
+		legend: {
+		  data: ['C','C++','JAVA', 'Java Script', 'Python', 'Java Sever Pages',"PHP[DB]","My Sql[DB]","Ajax","Swift"]
+		},
+		grid: {
+		  left: '3%',
+		  right: '4%',
+		  bottom: '3%',
+		  containLabel: true
+		},
+		toolbox: {
+		  feature: {
+			saveAsImage: {}
+		  }
+		},
+		xAxis: {
+		  type: 'category',
+		  boundaryGap: false,
+		  data: ['2016', '2017', '2018', '2019', '2020', '2021', '2022']
+		},
+		yAxis: {
+		  type: 'value'
+		},
+		series: [
+		  {
+			name: 'C',
+			type: 'line',
+			stack: 'Total',
+			data: [40, 45, 55, 60, 65, 65, 65]
+		  },
+		  {
+			name: 'C++',
+			type: 'line',
+			stack: 'Total',
+			data: [25, 30, 35, 50, 60, 60, 50]
+		  },
+		  {
+			name: 'JAVA',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 40, 40, 50, 70, 80]
+		  },
+		  {
+			name: 'Java Script ',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 20, 40, 50, 60]
+		  },
+		  {
+			name: 'Python',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 0, 0, 50, 65]
+		  },
+		  {
+			name: 'Java Sever Pages',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 0, 0, 40, 75]
+		  },
+		  {
+			name: 'PHP[DB]',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 20, 30, 40, 45]
+		  },
+		  {
+			name: 'My Sql[DB]',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 25, 45, 56, 70]
+		  },
+		  {
+			name: 'Ajax',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 0, 0, 15, 25]
+		  },
+		  {
+			name: 'Swift',
+			type: 'line',
+			stack: 'Total',
+			data: [0, 0, 0, 0, 0, 0, 10]
+		  }
+		]
+	  };
+	  
+		  if (option && typeof option === 'object') {
+			myChart.setOption(option);
+		  }
+	  
+		  window.addEventListener('resize', myChart.resize);
+		</script>
+	</div><!-- end of content -->
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="true">
+		Lee Tae Yun M PortPolio
+	</div><!-- footer -->
+</div><!-- end of page -->
+</body>
+
+</html>
