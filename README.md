@@ -1,6 +1,10 @@
 # mportpolio
 https://incandescent-phoenix-b261d7.netlify.app
 
+<img width="337" alt="스크린샷 2022-11-28 오후 5 06 57" src="https://user-images.githubusercontent.com/58839422/204225541-adcd3002-2ab2-469c-b256-5460c19ed5cb.png">
+
+<img width="783" alt="스크린샷 2022-11-28 오후 5 05 47" src="https://user-images.githubusercontent.com/58839422/204225365-428965ce-4af1-40b2-ba93-82e0a6ffe82c.png">
+
 index : jquery <br>
 myinfo : jquery,bulma <br>
 myst : bootstrap,uikit,jquery <br>
