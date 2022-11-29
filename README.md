@@ -2,8 +2,8 @@
 https://incandescent-phoenix-b261d7.netlify.app
 
 <img width="337" alt="스크린샷 2022-11-28 오후 5 06 57" src="https://user-images.githubusercontent.com/58839422/204225541-adcd3002-2ab2-469c-b256-5460c19ed5cb.png">
-
-<img width="783" alt="스크린샷 2022-11-28 오후 5 05 47" src="https://user-images.githubusercontent.com/58839422/204225365-428965ce-4af1-40b2-ba93-82e0a6ffe82c.png">
+<img width="313" alt="스크린샷 2022-11-29 오전 10 33 27" src="https://user-images.githubusercontent.com/58839422/204416544-692e28ff-cb13-421d-904f-d94307bceca7.png">
+<img width="740" alt="스크린샷 2022-11-29 오전 10 36 20" src="https://user-images.githubusercontent.com/58839422/204416904-ddcd3349-ac3c-410e-8b5f-1c5802b60824.png">
 
 index : jquery <br>
 myinfo : jquery,bulma <br>
